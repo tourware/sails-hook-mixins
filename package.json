@@ -9,6 +9,13 @@
   "author": {
     "name": "simonmilz"
   },
+  "keywords": [
+    "mixins",
+    "inheritance",
+    "sails",
+    "hook",
+    "sails-hook"
+  ],
   "license": "MIT",
   "sails": {
     "isHook": true
