@@ -13,7 +13,9 @@
   "sails": {
     "isHook": true
   },
-  "dependencies": {},
+  "dependencies": {
+    "deep-extend": "^0.4.1"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/TypischTouristik/sails-hook-mixins.git"
