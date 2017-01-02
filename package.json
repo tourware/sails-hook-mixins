@@ -1,0 +1,26 @@
+{
+  "name": "sails-hook-mixins",
+  "version": "0.0.1",
+  "description": "Mixins (horizontal inheritance) for sails models.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": {
+    "name": "simonmilz"
+  },
+  "license": "MIT",
+  "sails": {
+    "isHook": true
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TypischTouristik/sails-hook-mixins.git"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "sails": "^0.12.8"
+  }
+}
