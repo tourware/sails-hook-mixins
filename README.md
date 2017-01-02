@@ -15,3 +15,78 @@
 </p>
 
 ---
+
+## Getting started
+
+* Add a folder `api/mixins/` to your project
+* Add you first mixin, for example `api/mixins/hasCoordinates.js`
+* Define your attributes which are used by multiple models
+
+#### Defining shared attributes
+
+Lets take our example: `api/mixins/hasCoordinates.js`
+
+```js
+module.exports = {
+
+  attributes: {
+    lat: {
+      type: 'float'
+    },
+
+    lng: {
+      type: 'float'
+    }
+
+};
+```
+
+#### Use the mixin in the model
+
+For example the an address model `api/models/Address.js` needs the `lat` and `lng` attributes:
+
+```js
+module.exports = {
+
+  mixins: [
+    'hasCoordinates'
+  ],
+
+  attributes: {
+    street: {
+      type: 'string',
+      required: true
+    },
+
+    zipcode: {
+      type: 'string'
+    },
+
+    city: {
+      type: 'string'
+    }
+  }
+};
+```
+
+and a Point Of Interest model needs the `lat` and `lng` attributes:: `api/models/PointOfInterest.js`
+
+```js
+module.exports = {
+
+  mixins: [
+    'hasCoordinates'
+  ],
+
+  attributes: {
+    title: {
+      type: 'string',
+      required: true
+    },
+
+    description: {
+      type: 'string'
+    }
+  }
+};
+```
