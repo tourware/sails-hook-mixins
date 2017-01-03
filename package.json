@@ -1,6 +1,6 @@
 {
   "name": "sails-hook-mixins",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Mixins (horizontal inheritance) for sails models.",
   "main": "index.js",
   "scripts": {
